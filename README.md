@@ -1,2 +1,7 @@
-# table__test.guthub.io
-table
+Установить
+
+npm install
+
+Запуск
+
+gulp

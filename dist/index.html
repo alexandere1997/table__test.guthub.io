@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__box">
+        <div class="header__item">
+          <p class="header__head header__onetext">Тип предприятия</p>
+          <p class="header__number header__one">1</p>
+        </div>
+        <div class="header__item">
+          <p class="header__head header__twotext">Категории</p>
+          <p class="header__number header__two">2</p>
+        </div>
+        <div class="header__item">
+          <p class="header__head header__fritext">График работы</p>
+          <p class="header__number header__fri">3</p>
+        </div>
+        <div class="header__item">
+          <p class="header__head header__fourtext">Оборот и нагрузка</p>
+          <p class="header__number header__four">4</p>
+        </div>
+        <div class="header__item">
+          <p class="header__head header__fivetext">Должности</p>
+          <p class="header__number header__five">5</p>
+        </div>
+        <div class="header__item">
+          <p class="header__head header__sixtext">Тип нагрузки</p>
+          <p class="header__number header__six">6</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="schedule">
+      <div class="schedule__container">
+        <div class="schedule__box">
+          <h3>График работы предприятия</h3>
+          <div class="schedule__forms">
+            <p>Задать интервал таблицы</p>
+            <div class="schedule__interval">
+              <input class="schedule__start" type="text" value="" placeholder="1">
+              <span></span>
+              <input class="schedule__end" type="text" value="" placeholder="24">
+            </div>
+          </div>
+          <div class="schedule__table">
+            <table class="schedule__week">
+              <tr>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Пн</td>
+              </tr>
+              <tr>
+                <td>Вт</td>
+              </tr>
+              <tr>
+                <td>Ср</td>
+              </tr>
+              <tr>
+                <td>Чт</td>
+              </tr>
+              <tr>
+                <td>Пт</td>
+              </tr>
+              <tr>
+                <td>Сб</td>
+              </tr>
+              <tr>
+                <td>Вс</td>
+              </tr>
+            </table>
+            <div class="schedule__inner">
+              <table>
+                <tr class="schedule__data">
+                  <td>0 <sup>00</sup> </td>
+                  <td>1 <sup>00</sup></td>
+                  <td>2 <sup>00</sup></td>
+                  <td>3 <sup>00</sup></td>
+                  <td>4 <sup>00</sup></td>
+                  <td>5 <sup>00</sup></td>
+                  <td>6 <sup>00</sup></td>
+                  <td>7 <sup>00</sup></td>
+                  <td>8 <sup>00</sup></td>
+                  <td>9 <sup>00</sup></td>
+                  <td>10 <sup>00</sup></td>
+                  <td>11 <sup>00</sup></td>
+                  <td>12 <sup>00</sup></td>
+                  <td>13 <sup>00</sup></td>
+                  <td>14 <sup>00</sup></td>
+                  <td>15 <sup>00</sup></td>
+                  <td>16 <sup>00</sup></td>
+                  <td>17 <sup>00</sup></td>
+                  <td>18 <sup>00</sup></td>
+                  <td>19 <sup>00</sup></td>
+                  <td>20 <sup>00</sup></td>
+                  <td>21 <sup>00</sup></td>
+                  <td>22 <sup>00</sup></td>
+                  <td>23 <sup>00</sup></td>
+                  <td>24 <sup>00</sup></td>
+                </tr>
+                <tr class="schedule__square" data-bind="foreach: phones">
+                  <td></td>
+                </tr>
+                <tr class="schedule__square" data-bind="foreach: phones">
+                  <td></td>
+                </tr>
+                <tr class="schedule__square" data-bind="foreach: phones">
+                  <td></td>
+                </tr>
+                <tr class="schedule__square" data-bind="foreach: phones">
+                  <td></td>
+                </tr>
+                <tr class="schedule__square" data-bind="foreach: phones">
+                  <td></td>
+                </tr>
+                <tr class="schedule__square" data-bind="foreach: phones">
+                  <td></td>
+                </tr>
+                <tr class="schedule__square" data-bind="foreach: phones">
+                  <td></td>
+                </tr>
+              </table> 
+            </div>
+          </div>
+          <div class="schedule__button">
+            <button class="schedule__add"><img src="img/Vector(2).png" alt="Vector">Заполнить автоматически</button>
+            <button class="schedule__clear"><img src="img/Vector(1).png" alt="Vector">Очистить</button>
+          </div>
+        </div>
+        <div class="schedule__btn">
+          <a href="#">Назад</a>
+          <a href="#">Далее</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__line"></div>
+    <div class="footer__container">
+      <div class="footer__box">
+        <div class="footer__left">
+          <img src="img/Group_21.png" alt="Group_21">
+          <p>© Lookin, 2020</p>
+        </div>
+        <div class="footer__right">
+          <img src="img/Vector.png" alt="Vector">
+          <a href="#">Техническая поддержка</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
