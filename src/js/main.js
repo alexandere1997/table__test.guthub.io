@@ -47,7 +47,16 @@ function mask1(event) {
     this.value = matrix.replace(/./g, function(a) {
         return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
     });
+
+    console.log(schedule__start.value)
+    let end = 24
+    if(+schedule__end.value >= end) {
+      schedule__end.value = " "
+    }
 };
+
+
+
 
 schedule__start.addEventListener("input", mask1, false);
 schedule__start.addEventListener("focus", mask1, false);
@@ -55,5 +64,7 @@ schedule__start.addEventListener("blur", mask1, false);
 schedule__end.addEventListener("input", mask1, false);
 schedule__end.addEventListener("focus", mask1, false);
 schedule__end.addEventListener("blur", mask1, false);
+
+
 
 
